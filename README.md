@@ -1,3 +1,14 @@
+## このリポジトリについて
+
+T3 Stackを用いたテンプレートリポジトリです。
+
+- Next.js v14
+- TypeScript
+- Tailwind CSS
+- tRPC
+
+で構成されており、NextAuth.jsは使用していません。
+
 # Create T3 App
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
