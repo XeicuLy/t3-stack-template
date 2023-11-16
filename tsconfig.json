@@ -30,8 +30,10 @@
     }
   },
   "include": [
-    ".eslintrc.cjs",
+    "eslint.config.js",
     "next-env.d.ts",
+    "**/*.js",
+    "**/*.jsx",
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",
