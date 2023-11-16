@@ -32,6 +32,8 @@
   "include": [
     "eslint.config.js",
     "next-env.d.ts",
+    "**/*.js",
+    "**/*.jsx",
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",
