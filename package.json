@@ -9,7 +9,8 @@
     "dev": "next dev",
     "postinstall": "prisma generate",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@prisma/client": "^5.1.1",
@@ -26,7 +27,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-"@eslint/js": "^8.53.0",
+    "@eslint/js": "^8.53.0",
     "@types/eslint": "^8.44.2",
     "@types/node": "^18.16.0",
     "@types/react": "^18.2.33",
@@ -36,7 +37,9 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.47.0",
     "eslint-config-next": "^14.0.0",
-"eslint-config-prettier": "^9.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
     "postcss": "^8.4.27",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.5.1",
@@ -47,5 +50,9 @@
   "ct3aMetadata": {
     "initVersion": "7.23.2"
   },
-  "packageManager": "npm@9.8.1"
+  "packageManager": "npm@9.8.1",
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": "npx eslint --fix",
+    "**/*.{js,jsx,ts,tsx,json}": "npx prettier --write"
+  }
 }
