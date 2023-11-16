@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import { CreatePost } from '@/app/_components/create-post';
+import { Button } from '@/app/_components/ui/button';
 import { api } from '@/trpc/server';
 
 export default async function Home() {
@@ -38,6 +39,9 @@ export default async function Home() {
 
         <CrudShowcase />
       </div>
+      <Button variant='secondary' size='lg' className='shadow-xl'>
+        Sample Button
+      </Button>
     </main>
   );
 }
