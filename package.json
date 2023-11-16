@@ -57,5 +57,9 @@
     "**/*.{js,jsx,ts,tsx}": "npx eslint --fix",
     "**/*.{js,jsx,ts,tsx,json}": "npx prettier --write"
   },
-  "type": "module"
+  "type": "module",
+  "volta": {
+    "node": "20.9.0",
+    "npm": "10.2.4"
+  }
 }
