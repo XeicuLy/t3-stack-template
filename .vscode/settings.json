@@ -7,7 +7,7 @@
     "source.organizeImports": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.configPath": "prettier.config.mjs",
+  "prettier.configPath": "prettier.config.js",
   "typescript.tsdk": "node_modules/typescript/lib",
   "files.associations": {
     "*.css": "tailwindcss"

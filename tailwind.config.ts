@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+import { fontFamily } from 'tailwindcss/defaultTheme';
+
 module.exports = {
+  // ダークモードの設定
   darkMode: ['class'],
+  // コンテントのファイルパス
   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
+  // テーマの設定
   theme: {
+    // コンテナの設定
     container: {
       center: true,
       padding: '2rem',
@@ -10,7 +16,13 @@ module.exports = {
         '2xl': '1400px',
       },
     },
+    // テーマの拡張
     extend: {
+      // フォントファミリーの設定
+      fontFamily: {
+        sans: ['var(--font-sans)', ...fontFamily.sans],
+      },
+      // カスタムカラーの設定
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -46,11 +58,13 @@ module.exports = {
           foreground: 'hsl(var(--card-foreground))',
         },
       },
+      // border-radiusの設定
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
+      // カスタムキーフレームの設定
       keyframes: {
         'accordion-down': {
           from: { height: 0 },
@@ -61,11 +75,13 @@ module.exports = {
           to: { height: 0 },
         },
       },
+      // カスタムアニメーションの設定
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
     },
   },
+  // プラグインの設定
   plugins: [require('tailwindcss-animate')],
 };

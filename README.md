@@ -1,19 +1,43 @@
-## このリポジトリについて
+# このプロジェクトについて
 
-T3 Stackを用いたテンプレートリポジトリです。
+T3-Stackをベースにした、Next.jsのプロジェクトです。
+テンプレートとして利用することを想定しています。
 
-- Next.js v14
-- TypeScript
-- Tailwind CSS
-- tRPC
+## 開発環境構築方法
 
-で構成されており、NextAuth.jsは使用していません。
+```bash
+pnpm install
+pnpm db:push
+pnpm dev
+```
 
-# Create T3 App
+## CodeRabbitについて
+
+CodeRabbitによるレビューを受けたい場合は、CadeRabbitのサイトから設定を行う。
+
+## 技術構成について
+
+| 技術/ツール  | 説明                                             |
+| ------------ | ------------------------------------------------ |
+| Next.js      | Reactベースのフレームワーク                      |
+| NextAuth.js  | 認証機能の提供                                   |
+| Prisma       | データベースアクセス                             |
+| Tailwind CSS | CSSフレームワーク                                |
+| tRPC         | TypeScript向けのRPCライブラリ                    |
+| TypeScript   | 静的型付け言語                                   |
+| Husky        | Gitフック管理のためのツール                      |
+| shadcn/ui    | UIコンポーネントライブラリ                       |
+| pnpm         | Nodeパッケージマネージャ                         |
+| zod          | TypeScript向けのスキーマバリデーションライブラリ |
+| Volta        | Nodeなどのバージョン管理ツール                   |
+
+バージョンの詳細や、その他のツールについては`package.json`を参照してください。
+
+## Create T3 App
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
-## What's next? How do I make an app with this?
+### What's next? How do I make an app with this?
 
 We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
 
@@ -25,7 +49,7 @@ If you are not familiar with the different technologies used in this project, pl
 - [Tailwind CSS](https://tailwindcss.com)
 - [tRPC](https://trpc.io)
 
-## Learn More
+### Learn More
 
 To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
 
@@ -34,6 +58,6 @@ To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the fo
 
 You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
 
-## How do I deploy this?
+### How do I deploy this?
 
 Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
