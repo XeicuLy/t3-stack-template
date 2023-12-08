@@ -11,6 +11,10 @@ pnpm db:push
 pnpm dev
 ```
 
+## CodeRabbitについて
+
+CodeRabbitによるレビューを受けたい場合は、CadeRabbitのサイトから設定を行う。
+
 ## 技術構成について
 
 | 技術/ツール  | 説明                                             |
