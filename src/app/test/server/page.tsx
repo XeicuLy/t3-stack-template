@@ -20,10 +20,10 @@ const ServerTest = async () => {
   return (
     <div>
       <h2>Post List</h2>
-      {posts.map((post) => (
-        <div key={post.id}>
-          <h3>{post.title}</h3>
-          <p title={post.body}>{post.body}</p>
+      {posts.map(({ id, title, body }) => (
+        <div key={id}>
+          <h3>{title}</h3>
+          <p title={body}>{body}</p>
         </div>
       ))}
     </div>
