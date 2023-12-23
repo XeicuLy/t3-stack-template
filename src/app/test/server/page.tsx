@@ -8,8 +8,12 @@ type postsType = {
 };
 
 const ServerTest = async () => {
+  const response = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+  if (!response.ok) {
+    notFound();
+  }
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-  const posts: postsType[] = await fetch(`https://jsonplaceholder.typicode.com/posts`).then((res) => res.json());
+  const posts: postsType[] = await response.json();
   if (!posts || posts.length === 0) {
     notFound();
   }
