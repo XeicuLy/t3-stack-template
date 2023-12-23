@@ -24,7 +24,10 @@ const responseData = [
 // テストスイートの開始
 describe('src/app/test/server/page.tsx', () => {
   // レスポンスオブジェクトを空のResponseとして定義
-  const response = {} as Response;
+  const response = new Response(JSON.stringify(responseData), {
+    status: 200,
+    headers: { 'Content-Type': 'application/json' },
+  });
   // next/navigationモジュールのnotFound関数をモック化
   vi.mock('next/navigation', () => ({
     notFound: notFoundMock,
