@@ -30,6 +30,7 @@ CodeRabbitによるレビューを受けたい場合は、CadeRabbitのサイト
 | pnpm         | Nodeパッケージマネージャ                         |
 | zod          | TypeScript向けのスキーマバリデーションライブラリ |
 | Volta        | Nodeなどのバージョン管理ツール                   |
+| Vitest       | テスティングフレームワーク                       |
 
 バージョンの詳細や、その他のツールについては`package.json`を参照してください。
 
